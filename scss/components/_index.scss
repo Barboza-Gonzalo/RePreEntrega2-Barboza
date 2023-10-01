@@ -1,0 +1,171 @@
+.hero {
+    background-image: url(../img/meditacionfondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /*!---introduccion hero----*/
+    .hero-intro {
+        background-color: #fec5bbb6;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            p {
+                padding-top: 20px;
+                color: #200b00;
+                font-size: 40px;
+                font-weight: bold;
+                font-family: 'Architects Daughter', cursive;
+                text-align: center;                        
+                .hero-colortitulo {
+                    color: #a87242d5;
+                }
+            }
+        }
+        .hero-intro-img {
+            img {
+                width: 398px;
+                height: 584px;
+            }
+        }                
+        }
+    }
+    /*!---- hero meditacion iframe---*/
+    .hero-bienvenidos {
+        h1{
+            text-align: center;
+            color: #200b00;
+            font-size: 60px;
+            font-weight: bold;
+            padding-top: 5px;
+            font-family: 'Architects Daughter', cursive;
+            span {
+                color: #e9a060;
+            }
+        }
+        .hero-bienvenidos-mid{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            p{
+                width: 60%;
+                color: #200b00;
+                font-size: 35px;
+                font-weight: lighter;
+                font-family: 'Architects Daughter', cursive;
+                text-align: center;
+                .span-p {
+                    font-weight: bold;
+                }                           
+                }
+            }
+        }
+        .hero-video{
+            display: flex;
+            align-items: center;
+        }
+            
+        
+
+
+
+.carrusel {
+    display: flex;
+    flex-direction: row;
+    background-color: #e1948aa9;
+    margin-top: 10px;
+    .carrusel-titular {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        h2 {
+            font-size: 60px;
+            font-weight: bold;
+            color: #200b00;
+            font-family: 'Architects Daughter', cursive;
+            span {
+                color: #e9a060;
+            }
+        }
+        p {
+            color: #200b00;
+            font-size: 30px;
+            font-weight: lighter;
+            font-family: 'Architects Daughter', cursive;
+            text-align: center;                
+            .span-p{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+/*!--tarjeta productos index --*/
+.venta {
+    width: 100%;
+    display: grid;
+    background-color: #e1948a80;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    justify-items: center;
+    h2 {
+        width: 100%;
+        height: 100px;
+        font-weight: bold;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        font-size: 60px;
+        margin-top: 10px;
+        color: #200b00;
+        background-color: #c0958d;
+        font-family: 'Architects Daughter', cursive;
+        text-align: center;
+        span {
+            color: #FEC89A;
+        }
+    }
+    .grid-item {
+        width: 250px;
+        height: 400px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3{
+            font-size: 30px;
+            color: #200b00;
+            font-weight: bold;
+            font-family: 'Architects Daughter', cursive;
+            span{
+                color: #e9a060;                        
+            }
+        }
+        img{
+            width: 250px;
+            height: 300px;
+            border-radius: 30px;                    
+        }
+        a{
+            font-weight: bolder;
+            color: #200b00;
+            text-decoration: none;
+            font-size: 30px;
+            background-color: #c0958d;
+            font-family: 'Architects Daughter', cursive;
+            border-radius: 10px;
+            &:hover{
+                background-color: #E1948A;
+            }                  
+        }
+    }
+}
+
+
+

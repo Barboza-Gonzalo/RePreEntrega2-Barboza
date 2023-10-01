@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Atma&display=swap");
+/*!-------------reset------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*!-------------header------------*/
+header {
+  width: 100%;
+  height: 160px;
+  background-color: #c0958d;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  header nav div a img {
+    width: 192px;
+    height: 146px; }
+  header nav div .collapse ul .nav-item {
+    background-color: #c0958d; }
+  header nav div .collapse ul .nav-link {
+    color: #200b00;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive; }
+    header nav div .collapse ul .nav-link span {
+      color: #FEC89A; }
+    header nav div .collapse ul .nav-link:hover {
+      color: #FEC89A; }
+
+/*-------logo wth-----*/
+.whatsap {
+  position: fixed;
+  right: 10px;
+  bottom: 100px; }
+
+.hero {
+  background-image: url(../img/meditacionfondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /*!---introduccion hero----*/ }
+  .hero .hero-intro {
+    background-color: #fec5bbb6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .hero .hero-intro div p {
+      padding-top: 20px;
+      color: #200b00;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'Architects Daughter', cursive;
+      text-align: center; }
+      .hero .hero-intro div p .hero-colortitulo {
+        color: #a87242d5; }
+    .hero .hero-intro .hero-intro-img img {
+      width: 398px;
+      height: 584px; }
+
+/*!---- hero meditacion iframe---*/
+.hero-bienvenidos h1 {
+  text-align: center;
+  color: #200b00;
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 5px;
+  font-family: 'Architects Daughter', cursive; }
+  .hero-bienvenidos h1 span {
+    color: #e9a060; }
+
+.hero-bienvenidos .hero-bienvenidos-mid {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .hero-bienvenidos .hero-bienvenidos-mid p {
+    width: 60%;
+    color: #200b00;
+    font-size: 35px;
+    font-weight: lighter;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center; }
+    .hero-bienvenidos .hero-bienvenidos-mid p .span-p {
+      font-weight: bold; }
+
+.hero-video {
+  display: flex;
+  align-items: center; }
+
+.carrusel {
+  display: flex;
+  flex-direction: row;
+  background-color: #e1948aa9;
+  margin-top: 10px; }
+  .carrusel .carrusel-titular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%; }
+    .carrusel .carrusel-titular h2 {
+      font-size: 60px;
+      font-weight: bold;
+      color: #200b00;
+      font-family: 'Architects Daughter', cursive; }
+      .carrusel .carrusel-titular h2 span {
+        color: #e9a060; }
+    .carrusel .carrusel-titular p {
+      color: #200b00;
+      font-size: 30px;
+      font-weight: lighter;
+      font-family: 'Architects Daughter', cursive;
+      text-align: center; }
+      .carrusel .carrusel-titular p .span-p {
+        font-weight: bold; }
+
+/*!--tarjeta productos index --*/
+.venta {
+  width: 100%;
+  display: grid;
+  background-color: #e1948a80;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  justify-items: center; }
+  .venta h2 {
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 60px;
+    margin-top: 10px;
+    color: #200b00;
+    background-color: #c0958d;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center; }
+    .venta h2 span {
+      color: #FEC89A; }
+  .venta .grid-item {
+    width: 250px;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .venta .grid-item h3 {
+      font-size: 30px;
+      color: #200b00;
+      font-weight: bold;
+      font-family: 'Architects Daughter', cursive; }
+      .venta .grid-item h3 span {
+        color: #e9a060; }
+    .venta .grid-item img {
+      width: 250px;
+      height: 300px;
+      border-radius: 30px; }
+    .venta .grid-item a {
+      font-weight: bolder;
+      color: #200b00;
+      text-decoration: none;
+      font-size: 30px;
+      background-color: #c0958d;
+      font-family: 'Architects Daughter', cursive;
+      border-radius: 10px; }
+      .venta .grid-item a:hover {
+        background-color: #E1948A; }
+
+.producto {
+  width: 100%;
+  display: grid;
+  background-color: #e1948a80;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  justify-items: center;
+  margin-top: 30px;
+  margin-bottom: 5px; }
+  .producto div {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    background-color: #c0958d;
+    width: 100%;
+    height: fit-content; }
+    .producto div h2 {
+      color: #200b00;
+      font-size: 60px;
+      padding-top: 5px;
+      font-family: 'Architects Daughter', cursive; }
+      .producto div h2 span {
+        color: #FEC89A; }
+    .producto div p {
+      color: #200b00;
+      font-size: 30px;
+      padding: 10px;
+      font-family: 'Architects Daughter', cursive; }
+      .producto div p span {
+        font-weight: bolder; }
+  .producto img {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    margin: 10px; }
+
+/*---- footer con acceso a redes ----*/
+footer {
+  background-color: #c0958d;
+  display: flex;
+  flex-direction: column;
+  align-items: end; }
+  footer h2 {
+    color: #200b00;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Architects Daughter', cursive; }

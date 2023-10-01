@@ -1,0 +1,43 @@
+.producto{
+    width: 100%;
+    display: grid;
+    background-color: #e1948a80;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    justify-items: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    div{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        text-align: center;
+        background-color: #c0958d;
+        width: 100%;
+        height: fit-content;
+        h2{
+            color: #200b00;
+            font-size: 60px;
+            padding-top: 5px;
+            font-family: 'Architects Daughter', cursive;
+            span {
+                color:#FEC89A;
+
+            }
+        }
+        p{
+            color: #200b00;
+            font-size: 30px;
+            padding: 10px;
+            font-family: 'Architects Daughter', cursive;
+            span{
+                font-weight: bolder;
+            }
+        }
+    }
+    img{
+        width: 300px;
+        height: 400px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+}
