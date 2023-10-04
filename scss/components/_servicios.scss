@@ -1,0 +1,40 @@
+.terapias {
+    background-color: #fec5bbb6;
+    .terapias-servicios {
+        .terapias-servicios-contenido{
+            margin: 5px 0px 5px 0px;
+            h1{
+                font-family: 'Architects Daughter', cursive;
+                font-size: 60px;
+                font-weight: bold;
+                color: #200b00;
+                text-align: center;
+                background-color: #c0958d;
+                span{
+                    color: #FEC89A;
+
+                }
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                p{
+                    color: #200b00;
+                    font-size: 40px;
+                    font-weight: lighter;
+                    font-family: 'Architects Daughter', cursive;
+                    text-align: center;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+                img{
+                    width: 600px;
+                    height: 500px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

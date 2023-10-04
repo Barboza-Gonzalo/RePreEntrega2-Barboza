@@ -1,0 +1,55 @@
+.nosotros{
+    background-color: #fec5bbb6;
+    .nosotros-intro{
+        background-color: #fec5bbb6;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border:5px solid #c0958d9a ;
+        h1{
+            text-align: center;
+            color: #200b00;
+            font-size: 120px;
+            font-weight: bold;
+            font-family: 'Architects Daughter', cursive;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            span{
+                color:#c59478;
+            }
+        }
+        img{
+            width: 133px;
+            height: 195px;
+        }
+    }
+    p{
+        color: #200b00;
+        font-size: 35px;
+        font-family: 'Architects Daughter', cursive;
+        text-align: center
+    }
+    div{
+        background-color: #c0958d9a;
+        h2{
+            color: #200b00;
+            font-size: 45px;
+            font-weight: bold;
+            font-family: 'Architects Daughter', cursive;
+            text-align: center;
+            span{
+                color: #a16f43;
+            }
+        }
+        p{
+            color: #200b00;
+            font-size: 35px;
+            font-family: 'Architects Daughter', cursive;
+            text-align: center;
+            span{
+                font-weight: bolder;
+            }
+        }
+    }
+}

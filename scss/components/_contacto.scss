@@ -1,0 +1,42 @@
+.formulario {
+    text-align: center;
+    font-size: 40px;
+    color:#200b00;
+    font-weight: bold;
+    font-family: 'Architects Daughter', cursive;
+    background-color: #c0958d;
+    border: 20px double #fec99ac9 ;    
+    form{
+        .nombre{
+            padding: 0px 100px 50px 100px;
+            label{
+                span{
+                    color:#FEC89A
+                }
+            }
+
+        }
+        .genero{
+            padding: 0px 100px 100px 100px;
+            label{
+                span{
+                    color:#FEC89A
+                }
+            }
+
+        }
+        .consulta{
+            padding: 0px 100px 150px 100px;
+            label{
+                span{
+                    color:#FEC89A
+                }
+            }
+
+        }
+
+    }
+
+        
+
+}

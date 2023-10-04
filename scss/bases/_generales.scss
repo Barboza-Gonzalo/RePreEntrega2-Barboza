@@ -33,11 +33,13 @@ header {
             .collapse{
                 ul {
                     .nav-item {
-                        background-color: #c0958d;                        
+                        background-color: #c0958d;
+                        width: 150px;                       
                         }                        
                         .nav-link{
                             color: #200b00;
                             text-decoration: none;
+                            text-align: center;
                             font-size: 25px;
                             font-weight: bolder;
                             font-family: 'Architects Daughter', cursive;

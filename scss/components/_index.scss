@@ -1,38 +1,39 @@
-.hero {
+
+    .hero {
     background-image: url(../img/meditacionfondo.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
     /*!---introduccion hero----*/
-    .hero-intro {
-        background-color: #fec5bbb6;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        div {
-            p {
-                padding-top: 20px;
-                color: #200b00;
-                font-size: 40px;
-                font-weight: bold;
-                font-family: 'Architects Daughter', cursive;
-                text-align: center;                        
-                .hero-colortitulo {
-                    color: #a87242d5;
+        .hero-intro {
+            background-color: #fec5bbb6;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                div {
+                    p {
+                        padding-top: 20px;
+                        color: #200b00;
+                        font-size: 40px;
+                        font-weight: bold;
+                        font-family: 'Architects Daughter', cursive;
+                        text-align: center;                        
+                    .hero-colortitulo {
+                        color: #a87242d5;
+                        }
+                    }
                 }
+                .hero-intro-img {
+                    img {
+                        width: 398px;
+                        height: 584px;
+                    }
+                }                
             }
-        }
-        .hero-intro-img {
-            img {
-                width: 398px;
-                height: 584px;
-            }
-        }                
-        }
-    }
+    
     /*!---- hero meditacion iframe---*/
     .hero-bienvenidos {
         h1{
@@ -69,7 +70,7 @@
         }
             
         
-
+    }
 
 
 .carrusel {
