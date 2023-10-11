@@ -1,0 +1,22 @@
+//variables
+
+$color-principal:  #c0958d;
+$color-secundario: #e1948a80;
+$color-terciario: #fec5bbb6;
+$color-texto-principal:#200b00;
+$color-span-principal:#FEC89A;
+$color-span-secundario:#e9a060;
+
+
+//listas
+
+$font-size: 35px , 45px , 120px;
+
+//Mixin
+
+@mixin flex ($flex , $direction , $justify , $algin){
+    display:$flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $algin;
+}

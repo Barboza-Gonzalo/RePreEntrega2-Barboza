@@ -1,5 +1,6 @@
 @media (min-width:700px)and (max-width:1280px) {
 
+
     /*----------------------------index----------------------------*/ 
     
     .hero{
@@ -28,10 +29,8 @@
                 font-weight: bolder;
             }
             .hero-bienvenidos-mid{
-                display: flex;
-                flex-direction: column;
                 width: 100%;
-                align-items: center;
+                @include flex (flex , column , center , center);
                 p{
                     font-size: 27px;
                 }
@@ -53,6 +52,9 @@
             p {
                 display: none;
             }
+        }
+        .carrusel-imagen {
+            width: 100%;
         }
     }
 
@@ -105,8 +107,11 @@
 
 .terapias {
     .terapias-servicios {
+        h1{
+            font-size: 50px;
+        }
         .terapias-servicios-contenido{
-            h1{
+            h2{
                 font-size: 50px;
             }
             div{
@@ -181,10 +186,8 @@
                 font-weight: bold;
             }
             .hero-bienvenidos-mid{
-                display: flex;
-                flex-direction: column;
                 width: 100%;
-                align-items: center;
+                @include flex (flex , column , center , center);
                 p{
                     font-size: 20px;
                 }
@@ -210,6 +213,9 @@
         p {
             display: none;
         }
+    }
+    .carrusel-imagen {
+        width: 100%;
     }
 }
 
@@ -264,8 +270,11 @@ img{
 
 .terapias {
     .terapias-servicios {
+        h1{
+            font-size: 40px;
+        }
         .terapias-servicios-contenido{
-            h1{
+            h2{
                 font-size: 40px;
             }
             div{
@@ -288,9 +297,7 @@ img{
 
 .nosotros{
     .nosotros-intro{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+        @include flex (flex , column-reverse ,center,center);
         h1{
             font-size: 45px;
             height: 100px;
@@ -330,4 +337,31 @@ img{
 display: none;
 }
 
+}
+
+@media (min-width:700px)and (max-width:992px) {
+
+    /*----------------------------nav bar--------------------------*/
+    .collapse{
+        ul{
+            .nav-item{
+                width: 300px;
+                border: 3px solid #ac867e;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+@media (min-width:350px)and (max-width:700px) {
+
+    /*----------------------------nav bar--------------------------*/
+    .collapse{
+        ul{
+            .nav-item{
+                width: 300px;
+                border: 2px solid #ac867e;
+            }
+        }
+    }
 }

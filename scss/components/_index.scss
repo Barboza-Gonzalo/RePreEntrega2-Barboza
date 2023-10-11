@@ -1,22 +1,20 @@
 
     .hero {
-    background-image: url(../img/meditacionfondo.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.171) , rgba(255, 255, 255, 0.233)) , url(../img/meditacionfondo.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
-    /*!---introduccion hero----*/
+
         .hero-intro {
-            background-color: #fec5bbb6;
+            background-color: $color-terciario;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            height: calc(100vh - 160px)  ;
+            @include flex (flex,column,center,center);
                 div {
                     p {
                         padding-top: 20px;
-                        color: #200b00;
+                        color:$color-texto-principal;
                         font-size: 40px;
                         font-weight: bold;
                         font-family: 'Architects Daughter', cursive;
@@ -34,11 +32,11 @@
                 }                
             }
     
-    /*!---- hero meditacion iframe---*/
+
     .hero-bienvenidos {
         h1{
             text-align: center;
-            color: #200b00;
+            color: $color-texto-principal;
             font-size: 60px;
             font-weight: bold;
             padding-top: 5px;
@@ -53,7 +51,7 @@
             flex-direction: row;
             p{
                 width: 60%;
-                color: #200b00;
+                color: $color-texto-principal;
                 font-size: 35px;
                 font-weight: lighter;
                 font-family: 'Architects Daughter', cursive;
@@ -65,8 +63,10 @@
             }
         }
         .hero-video{
+            width: 40%;
             display: flex;
             align-items: center;
+            justify-content: center;
         }
             
         
@@ -76,25 +76,22 @@
 .carrusel {
     display: flex;
     flex-direction: row;
-    background-color: #e1948aa9;
+    background-color: $color-principal;
     margin-top: 10px;
     .carrusel-titular {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex,column,center,center);
         width: 40%;
         h2 {
             font-size: 60px;
             font-weight: bold;
-            color: #200b00;
+            color: $color-texto-principal;
             font-family: 'Architects Daughter', cursive;
             span {
                 color: #e9a060;
             }
         }
         p {
-            color: #200b00;
+            color: $color-texto-principal;
             font-size: 30px;
             font-weight: lighter;
             font-family: 'Architects Daughter', cursive;
@@ -104,17 +101,21 @@
             }
         }
     }
+    .carrusel-imagen {
+        width: 60%;
+    }
 }
 
 
-/*!--tarjeta productos index --*/
+
 .venta {
     width: 100%;
     display: grid;
-    background-color: #e1948a80;
+    background-color:$color-secundario;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
     justify-items: center;
+    padding-bottom: 10px;
     h2 {
         width: 100%;
         height: 100px;
@@ -123,29 +124,28 @@
         grid-column-end: 5;
         font-size: 60px;
         margin-top: 10px;
-        color: #200b00;
-        background-color: #c0958d;
+        color:$color-texto-principal;
+        background-color: $color-principal;
         font-family: 'Architects Daughter', cursive;
         text-align: center;
         span {
-            color: #FEC89A;
+            color: $color-span-principal;
         }
     }
     .grid-item {
         width: 250px;
         height: 400px;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex (flex,column,center,center);
+        transition: 1s;
+        &:hover {transform: scale(1.1);}
         h3{
             font-size: 30px;
-            color: #200b00;
+            color: $color-texto-principal;
             font-weight: bold;
             font-family: 'Architects Daughter', cursive;
             span{
-                color: #e9a060;                        
+                color: $color-span-secundario;                        
             }
         }
         img{
@@ -155,12 +155,14 @@
         }
         a{
             font-weight: bolder;
-            color: #200b00;
+            color: $color-texto-principal;
             text-decoration: none;
             font-size: 30px;
-            background-color: #c0958d;
+            background-color: $color-principal;
             font-family: 'Architects Daughter', cursive;
             border-radius: 10px;
+            transition-property: background-color ;
+            transition-duration: 1s;
             &:hover{
                 background-color: #E1948A;
             }                  

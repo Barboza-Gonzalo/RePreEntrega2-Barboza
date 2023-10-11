@@ -1,26 +1,33 @@
 .terapias {
-    background-color: #fec5bbb6;
+    background-color: $color-terciario;
     .terapias-servicios {
+        h1{
+            font-family: 'Architects Daughter', cursive;
+            font-size: 60px;
+            font-weight: bold;
+            color: $color-texto-principal;
+            text-align: center;
+            background-color:$color-principal;
+            border: 20px double #fec99ac9 ;
+        }
         .terapias-servicios-contenido{
             margin: 5px 0px 5px 0px;
-            h1{
+            h2{
                 font-family: 'Architects Daughter', cursive;
                 font-size: 60px;
                 font-weight: bold;
-                color: #200b00;
+                color: $color-texto-principal;
                 text-align: center;
-                background-color: #c0958d;
+                background-color:$color-principal;
                 span{
-                    color: #FEC89A;
+                    color: $color-span-principal;
 
                 }
             }
             div{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
+                @include flex (flex,row,center,center);
                 p{
-                    color: #200b00;
+                    color: $color-texto-principal;
                     font-size: 40px;
                     font-weight: lighter;
                     font-family: 'Architects Daughter', cursive;
