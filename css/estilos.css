@@ -47,7 +47,7 @@ header {
   .hero .hero-intro {
     background-color: #fec5bbb6;
     width: 100%;
-    height: calc(100vh - 160px);
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

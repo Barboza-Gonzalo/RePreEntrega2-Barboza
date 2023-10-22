@@ -9,7 +9,7 @@
         .hero-intro {
             background-color: $color-terciario;
             width: 100%;
-            height: calc(100vh - 160px)  ;
+            height: 80vh ;
             @include flex (flex,column,center,center);
                 div {
                     p {
