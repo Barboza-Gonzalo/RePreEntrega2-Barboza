@@ -1,37 +1,41 @@
 @media (min-width:700px)and (max-width:1280px) {
 
 
-    /*----------------------------index----------------------------*/ 
-    
-    .hero{
+    /*----------------------------index----------------------------*/
+
+    .hero {
         .hero-intro {
             width: 100%;
             display: flex;
             flex-direction: row;
+
             div {
-                p{
+                p {
                     font-size: 30px;
                     font-weight: bold;
                 }
             }
+
             .hero-intro-img {
-                img{
+                img {
                     width: 309px;
                     height: 454px;
                 }
             }
         }
-    
 
-        .hero-bienvenidos{
-            h1{
+
+        .hero-bienvenidos {
+            h1 {
                 font-size: 35px;
                 font-weight: bolder;
             }
-            .hero-bienvenidos-mid{
+
+            .hero-bienvenidos-mid {
                 width: 100%;
-                @include flex (flex , column , center , center);
-                p{
+                @include flex (flex, column, center, center);
+
+                p {
                     font-size: 27px;
                 }
             }
@@ -42,17 +46,21 @@
     .carrusel {
         display: flex;
         flex-direction: column;
+
         .carrusel-titular {
             width: 100%;
+
             h2 {
                 width: 100%;
                 text-align: center;
                 font-size: 45px;
             }
+
             p {
                 display: none;
             }
         }
+
         .carrusel-imagen {
             width: 100%;
         }
@@ -64,6 +72,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto;
         justify-items: center;
+
         h2 {
             grid-column-start: 1;
             grid-column-end: 3;
@@ -73,85 +82,95 @@
     }
 
 
-/*----------------------productos----------------------------*/
+    /*----------------------productos----------------------------*/
 
 
-.producto{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    div{
-        grid-column-start: 0;
-        grid-column-end: 1;
-        text-align: center;
-        border-radius: 10px;
-        margin: 30px;
-        h2{
-            font-size: 40px;
+    .producto {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+
+        div {
+            grid-column-start: 0;
+            grid-column-end: 1;
+            text-align: center;
+            border-radius: 10px;
+            margin: 30px;
+
+            h2 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 30px;
+            }
         }
-        p{
-            font-size: 30px;
+
+        img {
+            height: 350px;
+            margin: 30px;
+            border-radius: 10px;
         }
     }
-    img{
-        height: 350px;
-        margin: 30px;
-        border-radius: 10px;
-    }
-}
 
 
-/*-----------------------------------servicios------------------------------*/
+    /*-----------------------------------servicios------------------------------*/
 
-.terapias {
-    .terapias-servicios {
-        h1{
-            font-size: 50px;
-        }
-        .terapias-servicios-contenido{
-            h2{
+    .terapias {
+        .terapias-servicios {
+            h1 {
                 font-size: 50px;
             }
-            div{
-                p{
-                    font-size: 30px;
+
+            .terapias-servicios-contenido {
+                h2 {
+                    font-size: 50px;
                 }
-                img{
-                    width: 500px;
-                    height: 400px;                    
+
+                div {
+                    p {
+                        font-size: 30px;
+                    }
+
+                    img {
+                        width: 500px;
+                        height: 400px;
+                    }
                 }
             }
         }
     }
-}
 
-/*-------------------------------nosotros------------------------------*/
+    /*-------------------------------nosotros------------------------------*/
 
-.nosotros{
-    .nosotros-intro{
-        h1{
-            font-size: 75px;
+    .nosotros {
+        .nosotros-intro {
+            h1 {
+                font-size: 75px;
+            }
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        div {
+            h2 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 30px;
+            }
         }
     }
-    p{
-        font-size:30px ;
-    }
-    div{
-        h2{
-            font-size: 40px ;
-        }
-        p{
-            font-size:30px ;
-        }
-        }
-    }
 
 
-.whatsap {
-    display: none;
-}
+    .whatsap {
+        display: none;
+    }
 
 
 
@@ -160,37 +179,41 @@
 }
 
 
-@media (min-width:350px)and (max-width:700px){
+@media (min-width:350px)and (max-width:700px) {
 
-    /*----------------------------index----------------------------*/ 
+    /*----------------------------index----------------------------*/
 
-    .hero{
+    .hero {
         .hero-intro {
             div {
-                p{
-                    font-size: 27px;                    
+                p {
+                    font-size: 27px;
                 }
             }
+
             .hero-intro-img {
-                img{
+                img {
                     width: 133px;
                     height: 195px;
                 }
             }
         }
-    
 
-        .hero-bienvenidos{
-            h1{
+
+        .hero-bienvenidos {
+            h1 {
                 font-size: 25px;
                 font-weight: bold;
             }
-            .hero-bienvenidos-mid{
+
+            .hero-bienvenidos-mid {
                 width: 100%;
-                @include flex (flex , column , center , center);
-                p{
+                @include flex (flex, column, center, center);
+
+                p {
                     font-size: 20px;
                 }
+
                 .hero-video {
                     width: 350px;
 
@@ -200,151 +223,169 @@
     }
 
 
-.carrusel {
-    display: flex;
-    flex-direction: column;
-    .carrusel-titular {
-        width: 100%;
-        h2 {
+    .carrusel {
+        display: flex;
+        flex-direction: column;
+
+        .carrusel-titular {
             width: 100%;
-            text-align: center;
-            font-size: 30px;
+
+            h2 {
+                width: 100%;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            p {
+                display: none;
+            }
         }
-        p {
-            display: none;
+
+        .carrusel-imagen {
+            width: 100%;
         }
     }
-    .carrusel-imagen {
+
+    .venta {
         width: 100%;
-    }
-}
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        justify-items: center;
 
-.venta {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    justify-items: center;
-    h2 {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        font-size: 30px;
-        text-align: center;
-    }
-}
-
-
-
-/*----------------------productos----------------------------*/
-
-
-.producto{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-div{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    text-align: center;
-    border-radius: 10px;
-    height: 300px;
-    h2{
-        font-size: 30px;
-    }
-    p{
-        font-size: 20px;
-    }
-}
-img{
-    height: 250px;
-    margin: 10px;
-    border-radius: 10px;
-}
-}
-
-
-
-/*---------------------------------servicios-------------------------------*/
-
-.terapias {
-    .terapias-servicios {
-        h1{
-            font-size: 40px;
+        h2 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            font-size: 30px;
+            text-align: center;
         }
-        .terapias-servicios-contenido{
-            h2{
+    }
+
+
+
+    /*----------------------productos----------------------------*/
+
+
+    .producto {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+
+        div {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            text-align: center;
+            border-radius: 10px;
+            height: 300px;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        img {
+            height: 250px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    }
+
+
+
+    /*---------------------------------servicios-------------------------------*/
+
+    .terapias {
+        .terapias-servicios {
+            h1 {
                 font-size: 40px;
             }
-            div{
-                display: flex;
-                flex-direction: column;
-                p{
-                    font-size: 20px;
+
+            .terapias-servicios-contenido {
+                h2 {
+                    font-size: 40px;
                 }
-                img{
-                    width: 330px;
-                    height: 250px;                    
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        font-size: 20px;
+                    }
+
+                    img {
+                        width: 330px;
+                        height: 250px;
+                    }
                 }
             }
         }
     }
-}
 
 
-/*-------------------------------nosotros------------------------------*/
+    /*-------------------------------nosotros------------------------------*/
 
-.nosotros{
-    .nosotros-intro{
-        @include flex (flex , column-reverse ,center,center);
-        h1{
-            font-size: 45px;
-            height: 100px;
+    .nosotros {
+        .nosotros-intro {
+            @include flex (flex, column-reverse, center, center);
+
+            h1 {
+                font-size: 45px;
+                height: 100px;
+            }
+
+            img {
+                width: 113px;
+                height: 155px;
+            }
         }
-        img{
-            width: 113px;
-            height: 155px;
+
+        p {
+            font-size: 20px;
+        }
+
+        div {
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 20px;
+            }
         }
     }
-    p{
-        font-size:20px ;
+
+
+
+    /*-----------------------------------contacto---------------------------*/
+
+
+    .formulario {
+        font-size: 30px;
+
     }
-    div{
-        h2{
-            font-size: 30px ;
-        }
-        p{
-            font-size:20px ;
-        }
+
+
+
+
+    .whatsap {
+        display: none;
     }
-}
-
-
-
-/*-----------------------------------contacto---------------------------*/
-
-
-.formulario {
-    font-size: 30px;
-    
-}
-
-
-
-
-.whatsap {
-display: none;
-}
 
 }
 
 @media (min-width:700px)and (max-width:992px) {
 
     /*----------------------------nav bar--------------------------*/
-    .collapse{
-        ul{
-            .nav-item{
+    .collapse {
+        ul {
+            .nav-item {
                 width: 300px;
                 border: 3px solid #ac867e;
                 border-radius: 3px;
@@ -356,9 +397,9 @@ display: none;
 @media (min-width:350px)and (max-width:700px) {
 
     /*----------------------------nav bar--------------------------*/
-    .collapse{
-        ul{
-            .nav-item{
+    .collapse {
+        ul {
+            .nav-item {
                 width: 300px;
                 border: 2px solid #ac867e;
             }

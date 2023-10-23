@@ -1,76 +1,82 @@
-
-    .hero {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.171) , rgba(255, 255, 255, 0.233)) , url(../img/meditacionfondo.jpg);
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.171), rgba(255, 255, 255, 0.233)), url(../img/meditacionfondo.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
+    .hero-intro {
+        background-color: $color-terciario;
+        width: 100%;
+        height: 80%;
+        @include flex (flex, column, center, center);
 
-        .hero-intro {
-            background-color: $color-terciario;
-            width: 100%;
-            height: 80% ;
-            @include flex (flex,column,center,center);
-                div {
-                    p {
-                        padding-top: 20px;
-                        color:$color-texto-principal;
-                        font-size: 40px;
-                        font-weight: bold;
-                        font-family: 'Architects Daughter', cursive;
-                        text-align: center;                        
-                    .hero-colortitulo {
-                        color: #a87242d5;
-                        }
-                    }
+        div {
+            p {
+                padding-top: 20px;
+                color: $color-texto-principal;
+                font-size: 40px;
+                font-weight: bold;
+                font-family: 'Architects Daughter', cursive;
+                text-align: center;
+
+                .hero-colortitulo {
+                    color: #a87242d5;
                 }
-                .hero-intro-img {
-                    img {
-                        width: 398px;
-                        height: 584px;
-                    }
-                }                
             }
-    
+        }
+
+        .hero-intro-img {
+            img {
+                width: 398px;
+                height: 584px;
+            }
+        }
+    }
+
 
     .hero-bienvenidos {
-        h1{
+        h1 {
             text-align: center;
             color: $color-texto-principal;
             font-size: 60px;
             font-weight: bold;
             padding-top: 5px;
             font-family: 'Architects Daughter', cursive;
+
             span {
                 color: #e9a060;
             }
         }
-        .hero-bienvenidos-mid{
+
+        .hero-bienvenidos-mid {
             width: 100%;
             display: flex;
             flex-direction: row;
-            p{
+
+            p {
                 width: 60%;
                 color: $color-texto-principal;
                 font-size: 35px;
                 font-weight: lighter;
                 font-family: 'Architects Daughter', cursive;
                 text-align: center;
+
                 .span-p {
                     font-weight: bold;
-                }                           
                 }
             }
         }
-        .hero-video{
-            width: 40%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-            
-        
     }
+
+    .hero-video {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
 
 
 .carrusel {
@@ -78,29 +84,35 @@
     flex-direction: row;
     background-color: $color-principal;
     margin-top: 10px;
+
     .carrusel-titular {
-        @include flex (flex,column,center,center);
+        @include flex (flex, column, center, center);
         width: 40%;
+
         h2 {
             font-size: 60px;
             font-weight: bold;
             color: $color-texto-principal;
             font-family: 'Architects Daughter', cursive;
+
             span {
                 color: #e9a060;
             }
         }
+
         p {
             color: $color-texto-principal;
             font-size: 30px;
             font-weight: lighter;
             font-family: 'Architects Daughter', cursive;
-            text-align: center;                
-            .span-p{
+            text-align: center;
+
+            .span-p {
                 font-weight: bold;
             }
         }
     }
+
     .carrusel-imagen {
         width: 60%;
     }
@@ -111,49 +123,60 @@
 .venta {
     width: 100%;
     display: grid;
-    background-color:$color-secundario;
+    background-color: $color-caternario;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
     justify-items: center;
     padding-bottom: 10px;
+
     h2 {
         width: 100%;
-        height: 100px;
+        height: 150px;
         font-weight: bold;
         grid-column-start: 1;
         grid-column-end: 5;
         font-size: 60px;
-        margin-top: 10px;
-        color:$color-texto-principal;
-        background-color: $color-principal;
+        padding-top: 20px;
+        color: $color-texto-principal;
+        background: rgb(192, 149, 141);
+        background: linear-gradient(180deg, rgba(192, 149, 141, 1) 36%, rgba(223, 178, 170, 1) 64%);
         font-family: 'Architects Daughter', cursive;
         text-align: center;
+
         span {
             color: $color-span-principal;
         }
     }
+
     .grid-item {
         width: 250px;
         height: 400px;
         text-align: center;
-        @include flex (flex,column,center,center);
+        @include flex (flex, column, center, center);
         transition: 1s;
-        &:hover {transform: scale(1.1);}
-        h3{
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        h3 {
             font-size: 30px;
             color: $color-texto-principal;
             font-weight: bold;
             font-family: 'Architects Daughter', cursive;
-            span{
-                color: $color-span-secundario;                        
+
+            span {
+                color: $color-span-principal;
             }
         }
-        img{
+
+        img {
             width: 250px;
             height: 300px;
-            border-radius: 30px;                    
+            border-radius: 30px;
         }
-        a{
+
+        a {
             font-weight: bolder;
             color: $color-texto-principal;
             text-decoration: none;
@@ -161,14 +184,12 @@
             background-color: $color-principal;
             font-family: 'Architects Daughter', cursive;
             border-radius: 10px;
-            transition-property: background-color ;
+            transition-property: background-color;
             transition-duration: 1s;
-            &:hover{
+
+            &:hover {
                 background-color: #E1948A;
-            }                  
+            }
         }
     }
 }
-
-
-

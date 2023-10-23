@@ -7,18 +7,19 @@
             font-weight: bold;
             color: $color-texto-principal;
             text-align: center;
-            background-color:$color-principal;
-            border: 20px double #fec99ac9 ;
+            background: rgb(192,149,141);
+            background: linear-gradient(180deg, rgba(192,149,141,1) 36%, rgba(223,178,170,1) 64%);
+            height: 150px;
+            @include flex (flex,row,center,center)
         }
         .terapias-servicios-contenido{
-            margin: 5px 0px 5px 0px;
             h2{
                 font-family: 'Architects Daughter', cursive;
                 font-size: 60px;
                 font-weight: bold;
                 color: $color-texto-principal;
                 text-align: center;
-                background-color:$color-principal;
+                background-color:$color-caternario;
                 span{
                     color: $color-span-principal;
 
@@ -40,6 +41,7 @@
                     width: 600px;
                     height: 500px;
                     border-radius: 5px;
+                    margin: 5px;
                 }
             }
         }

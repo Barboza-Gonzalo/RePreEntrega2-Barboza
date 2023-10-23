@@ -1,35 +1,41 @@
 .formulario {
     text-align: center;
     font-size: 40px;
-    color:$color-texto-principal;
+    color: $color-texto-principal;
     font-weight: bold;
     font-family: 'Architects Daughter', cursive;
     background-color: $color-principal;
-    border: 20px double #fec99ac9 ;    
-    form{
-        .nombre{
+    border: 20px double #fec99ac9;
+
+    form {
+        .nombre {
             padding: 0px 100px 50px 100px;
-            label{
-                span{
-                    color:#FEC89A
+
+            label {
+                span {
+                    color: #FEC89A
                 }
             }
 
         }
-        .genero{
+
+        .genero {
             padding: 0px 100px 100px 100px;
-            label{
-                span{
-                    color:#FEC89A
+
+            label {
+                span {
+                    color: #FEC89A
                 }
             }
 
         }
-        .consulta{
+
+        .consulta {
             padding: 0px 100px 150px 100px;
-            label{
-                span{
-                    color:#FEC89A
+
+            label {
+                span {
+                    color: #FEC89A
                 }
             }
 
@@ -37,6 +43,6 @@
 
     }
 
-        
+
 
 }

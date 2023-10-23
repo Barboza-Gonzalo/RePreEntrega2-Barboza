@@ -1,10 +1,12 @@
-.nosotros{
-    background-color: $color-terciario;
-    .nosotros-intro{
-        background-color: $color-terciario;
-        @include flex (flex,row,space-evenly,center);
-        border:5px solid #c0958d9a ;
-        h1{
+.nosotros {
+    background-color: $color-caternario;
+
+    .nosotros-intro {
+        background: rgb(192, 149, 141);
+        background: linear-gradient(180deg, rgba(192, 149, 141, 1) 36%, rgba(223, 178, 170, 1) 64%);
+        @include flex (flex, row, space-evenly, center);
+
+        h1 {
             text-align: center;
             color: $color-texto-principal;
             font-size: nth($font-size , 3);
@@ -13,39 +15,46 @@
             height: 200px;
             display: flex;
             align-items: center;
-            span{
-                color:$color-span-secundario;
-            }
         }
-        img{
+
+        img {
             width: 133px;
             height: 195px;
         }
     }
-    p{
+
+    p {
         color: $color-texto-principal;
-        font-size:nth($font-size , 1);
+        font-size: nth($font-size , 1);
         font-family: 'Architects Daughter', cursive;
         text-align: center
     }
-    div{
-        background-color: #c0958d9a;
-        h2{
+
+    div {
+        background: rgb(192, 149, 141);
+        background: linear-gradient(180deg, rgba(192, 149, 141, 1) 36%, rgba(223, 178, 170, 1) 64%);
+        padding: 20px;
+
+        h2 {
             color: $color-texto-principal;
-            font-size:nth($font-size , 2);
+            font-size: nth($font-size , 2);
             font-weight: bold;
             font-family: 'Architects Daughter', cursive;
             text-align: center;
-            span{
+
+            span {
                 color: $color-span-principal;
             }
         }
-        p{
-            color:$color-texto-principal;
-            font-size:nth($font-size , 1);
+
+        p {
+            color: $color-texto-principal;
+            font-size: nth($font-size , 1);
             font-family: 'Architects Daughter', cursive;
             text-align: center;
-            span{
+            margin-bottom: 0px;
+
+            span {
                 font-weight: bolder;
             }
         }
